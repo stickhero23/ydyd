@@ -2,17 +2,13 @@
 
 void main(void)
 {
-    int c = 0;
-
-    while (c < '9' )
-    {
-        if (c != '2' && c != '4')
+    int c;
+    c = 48;
+    
+    while (c <=  57)
         {
             putchar(c);
-
+            c++;
         }
-        c++;
-    }
-    putchar('\n');
-
+        putchar('\n');
 }
