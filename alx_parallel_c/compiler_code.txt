@@ -1,0 +1,2 @@
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main_print_line.c print_line_v2.c -o 9-lines
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-print_diagonal.c print_diagonal.c -o 8-lines
