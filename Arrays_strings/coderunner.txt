@@ -1,1 +1,1 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-strncpy.c strncpy.c -o 1-lines
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-strcmp.c strcmp.c -o 1-lines
