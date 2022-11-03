@@ -1,1 +1,1 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-strcat.c strcat.c -o 1-lines
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-chessboard.c chessboard.c -o chessboard
