@@ -12,18 +12,18 @@ int main()
     n = 98;
     
     *p = 402;
-    printf("Value of 'n' is: %d\n", n);
+    /*printf("Value of 'n' is: %d\n", n); */
 
-    char *c;
-    char m;
+    char *c; /* pointer to type char */
+    char m; /*a char variable*/
     
-    c = &m;
-    m = 'k';
+    c = &m; /* c now points to m */
+    m = 'k'; /* value of m or stored in m is now character k */
 
-    *c = 'n';
+    /* *c = 'n'; /* dereferencing c by putting character n*/
 
     printf("Value of m is: %c\n", m);
-
+    printf("Value of m is: %p\n", &m);
     /**int my_array[4];
     my_array[0] = 12;
     my_array[1] = 16;

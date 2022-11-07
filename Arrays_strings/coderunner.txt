@@ -1,1 +1,1 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-chessboard.c chessboard.c -o chessboard
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-is_odd.c is_odd.c -o is_odd
