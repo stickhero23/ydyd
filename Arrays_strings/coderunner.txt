@@ -1,3 +1,5 @@
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-is_odd.c is_odd.c -o is_odd
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c *.c *.c -o is_odd
 gcc -c *.c
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-malloc.c -o 0-malloc
