@@ -7,3 +7,5 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-malloc.c -o 0-malloc
 
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main-create_array.c create_array.c -o arr 
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 args.c args_files.c -o args
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main-malloc_checked.c malloc_checked.c -o malloc_checked
