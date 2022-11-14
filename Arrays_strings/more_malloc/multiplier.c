@@ -1,11 +1,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "main.h"
-
-int main()
-{
-
-}
 /**
  * @brief Multiplie function
  * 
@@ -13,37 +8,46 @@ int main()
  * @param argv 
  * @return int 
  */
-int multiplier(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-    int i, mul, num1, num2, n;
+    int k, mul, num1, num2, n;
     int *p;
 
     n = argc - 1;
 
     if (n != 2)
     {
-        _putchar("Error");
-        _putchar('\n');
+        _puts("Error");
+        _puts("\n");
         exit(98);
     }
     num1 = atoi(argv[1]);
     num2 = atoi(argv[2]);
-    if (_isdigit(num1) && _isdigit(num2))
+    if (!((_isdigit(num1) && _isdigit(num2))))
     {
-        _putchar("Error\n");
-        _putchar('\n');
+        _puts("Error");
+        _puts("\n");
         exit(98);
     }
     else
     {
         mul = num1 * num2;
-        _putchar(mul);
-        _putchar('\n');
+        k = count_digits(mul);
+        p = (int *)malloc(sizeof(int) * k);
+        
+        /* printf("%d\n", mul); */
     }
+    
+    if (p == NULL)
+    {
+        return (1);
+    }
+    return (mul);
+    
     
 
 }
-// isdigit 
+/* isdigit  */
 int _isdigit(int c)
 {
     if (c >= '0' && c <= '9')
@@ -53,7 +57,7 @@ int _isdigit(int c)
     return (0);
     
 }
-// puts
+/* puts */
 /**
  * _puts - prints a string, followed by a new line, to stdout
  * @str: string to print
@@ -67,7 +71,7 @@ void _puts(char *str)
 	_putchar('\n');
 }
 
-// putchar
+/* putchar */
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -75,7 +79,25 @@ void _puts(char *str)
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-char _putchar(char c)
+int _putchar(char c)
 {
-	return (write(1, &c, 1));
+    return (write(1, &c, 1));
+}
+
+/**
+ * @brief count the number of digits in an integer
+ * This function will be used to count the number of digits in mul
+ * 
+ */
+int count_digits(int q)
+{
+    int count = 0;
+    do
+    {
+
+        q /= 10;
+        ++count;
+    } while (q != 0);
+
+    return (count);
 }
