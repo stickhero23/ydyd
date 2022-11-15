@@ -3,16 +3,21 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
+ * main - check the code for ALX School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char *concat;
+    char *s;
 
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
+    s = str_concat("Betty ", "Holberton");
+    if (s == NULL)
+    {
+        printf("failed\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
     return (0);
 }

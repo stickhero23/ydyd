@@ -2,3 +2,17 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main_print_line.c prin
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-print_diagonal.c print_diagonal.c -o 8-lines
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main-swap_int.c swap_int.c -o 2-lines
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 hseries.c -o hseries
+
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main-strcat.c strcat.c -o 2-strcat
+
+
+
+
+
+DISM /online /disable-feature /featurename:VirtualMachinePlatform /norestart
+DISM /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart
+
+DISM /online /enable-feature /featurename:VirtualMachinePlatform /norestart
+
+DISM /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart

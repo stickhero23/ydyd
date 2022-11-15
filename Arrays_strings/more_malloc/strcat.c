@@ -24,35 +24,49 @@ int _strlen(char *string)
  * Return: returns NULL if it fails or empty, or pointer to allocated space memory on success.
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int k, i, j, length;
-
-	k = n;
+	int length1 = 0;
+	int length2 = 0; // length of s1
+	int j = 0;
+	int i = 0;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
+	}
 	if (s2 == NULL)
+	{
 		s2 = "";
-	if (k < 0) /* for negative bytes */
-		return (NULL);
-	if (k >= _strlen(s2))
-		k = _strlen(s2);
+	}
+	while (*(s1 + i))
+	{
+		length1++, i++;
+	}
+	while (*(s2 + j))
+	{
+		length2++, j++;
+	}
+	length2++;
 
-	length = _strlen(s1) + k + 1; /* include +1 for null pointer */
+	p = malloc(sizeof(char) * (length1 + length2));
 
-	p = malloc(sizeof(*p) * length);
-
-    
 	if (p == NULL)
+	{
 		return (NULL);
+	}
+	i = 0, j = 0;
+	while (i < length1)
+	{
+		*(p + i) = *(s1 + i);
+		i++;
+	}
+	while (j < length2)
+	{
+		*(p + i) = *(s2 + j);
+		i++, j++;
+	}
+	retun (p);
 
-	for (i = 0; s1[i] != '\0'; i++) /* concatenate */
-		p[i] = s1[i];
-	for (j = 0; j < k; j++)
-		p[i + j] = s2[j];
-	p[i + j] = '\0'; /* Add for null pointer */
-
-	return (p);
 }
