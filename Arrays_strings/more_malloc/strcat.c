@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p;
 	int length1 = 0;
-	int length2 = 0; // length of s1
+	int length2 = 0; 
 	int j = 0;
 	int i = 0;
 
@@ -67,6 +67,6 @@ char *str_concat(char *s1, char *s2)
 		*(p + i) = *(s2 + j);
 		i++, j++;
 	}
-	retun (p);
+	return (p);
 
 }
