@@ -9,3 +9,5 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main-create_array.c create_array.
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 args.c args_files.c -o args
 
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main-malloc_checked.c malloc_checked.c -o malloc_checked
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c get_op_func.c 3-op_functions.c -o calc
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main-dog.c dog.c -o dog
