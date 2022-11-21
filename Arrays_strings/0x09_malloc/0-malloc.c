@@ -19,7 +19,7 @@
  */
 void m(int n0, int n1, int n2)
 {
-    int *t;
+    int *t; 
     int sum;
     int i;
     

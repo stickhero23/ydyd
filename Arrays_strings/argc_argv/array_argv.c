@@ -19,12 +19,13 @@
 int main( int argc, char *argv[])
 {
     int i;
-
+    
     for (i = 0; i < argc; i++)
     {
         printf("%s\n", argv[i]);
     }
     /* (void) argv; */
-    printf("%d\n", argc);
+    printf("The name of the program is: %s\n", argv[0]);
+    printf("The number of arguments is: %d\n", argc);
     return (0);
 }
