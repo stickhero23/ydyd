@@ -27,7 +27,7 @@ int main() {
       ++numerator;             // increment number by 1
    }
    // Print the result
-   printf("The sum from 1 to %d is %.2lf\n", maxDenominator, sum);
+   printf("The sum from 1 to %d is %f\n", maxDenominator, sum);
  
    return (sum);
 }
