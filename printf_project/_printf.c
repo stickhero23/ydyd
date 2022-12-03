@@ -16,8 +16,11 @@ int _printf(const char *format, ...)
 	}; /* the different data types */
 	va_list valist;
 
-	va_start(valist, format);/* starting the iterating the agruments */
-
+	if (format == NULL)
+	{
+		return (-1);
+	}
+	va_start(valist, format); /* starting the iterating the agruments */
 	/* the number of chars that have been printed */
 	num_char = parse_string(format, type_list, valist);
 	va_end(valist);
