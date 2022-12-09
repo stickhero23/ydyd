@@ -7,7 +7,7 @@
 
 
 #include <fcntl.h>
-main()
+int main()
 {
   char *c;
   int fd, sz;
